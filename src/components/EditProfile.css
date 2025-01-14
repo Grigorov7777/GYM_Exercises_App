@@ -1,0 +1,165 @@
+
+.edit-profile-section {
+  padding: 25px;
+  background: linear-gradient(135deg, #ffffff, #f7f7f7);
+  border-radius: 15px;
+  max-width: 800px;
+  margin: 25px auto;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.edit-profile-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.edit-profile-header {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #444;
+  margin-bottom: 25px;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+.edit-form-group {
+  margin-bottom: 20px;
+}
+
+.edit-form-label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
+  font-size: 1rem;
+  color: #555;
+}
+
+.edit-form-input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.edit-form-input:focus {
+  border: 1px solid #FF2625;
+  box-shadow: 0 0 5px rgba(255, 38, 37, 0.3);
+  outline: none;
+}
+
+
+.add-achievement-button,
+.delete-button {
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+
+.add-achievement-button {
+  background-color: #FF2625;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+.add-achievement-button {
+  background-color: #FF2625 !important;
+  border-radius: 5px !important;
+}
+
+.add-achievement-button:hover {
+  background-color: #e02424;
+  transform: scale(1.05);
+}
+
+.delete-button {
+  background-color: #FF2625;
+  padding: 8px 15px;
+  font-size: 0.9rem;
+  margin-left: 15px;
+}
+
+.delete-button:hover {
+  background-color: #e02424;
+  transform: scale(1.05);
+}
+
+/* Stylish Input Field */
+.achievement-input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: border 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.achievement-input:focus {
+  border: 1px solid #FF2625;
+  box-shadow: 0 0 8px rgba(255, 38, 37, 0.3);
+  background-color: #fff;
+  outline: none;
+}
+
+.achievement-input::placeholder {
+  color: #aaa;
+  font-style: italic;
+  transition: color 0.3s ease;
+}
+
+.achievement-input:focus::placeholder {
+  color: #ff7373;
+}
+
+
+.loading-message,
+.error-message {
+  font-size: 1.1rem;
+  color: #777;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.achievement-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.achievement-item:hover {
+  background-color: #fff;
+  transform: translateY(-3px);
+}
+
+
+.add-achievement-form {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.add-achievement-form input {
+  flex: 1;
+}

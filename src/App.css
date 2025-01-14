@@ -1,0 +1,132 @@
+/* General Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Oswald', Arial, sans-serif; /* Magazine-style, bold sans-serif font */
+  background-color: #f2f2f2; /* Light gray background for magazine effect */
+  color: #333; /* Dark text for readability */
+  line-height: 1.6;
+}
+
+/* Floating Quote Section */
+.floating-quote {
+  padding: 40px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #FF2625, #FF7A7A); /* Gradient background */
+  margin-bottom: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  animation: float 3s ease-in-out infinite; /* Floating animation */
+}
+
+.quote-text {
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Alegreya, sans-serif';
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Text shadow for readability */
+  line-height: 1.4;
+}
+
+/* Weather Section */
+.weather-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.location-input {
+  padding: 12px;
+  font-size: 16px;
+  width: 300px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  outline: none;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding shadow to input */
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.2rem;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  background-color: #FF2625;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #d82020;
+  transform: scale(1.05);
+}
+
+/* Keyframes for Floating Animation */
+@keyframes float {
+  0% {
+    transform: translateY(0); /* Start at the normal position */
+  }
+  50% {
+    transform: translateY(-10px); /* Move upwards */
+  }
+  100% {
+    transform: translateY(0); /* Move back to the normal position */
+  }
+}
+
+/* Headers and Titles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bebas Neue', 'Oswald', sans-serif; /* Bold, impactful headers */
+  color: #FF2625; /* Fitness magazine red for headers */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive Media Queries */
+@media screen and (max-width: 768px) {
+  .floating-quote {
+    padding: 20px;
+  }
+
+  .location-input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .button {
+    font-size: 1rem;
+  }
+}
